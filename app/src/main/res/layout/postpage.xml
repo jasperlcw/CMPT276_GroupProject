@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/post_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+
+                    <TextView
+                        android:id="@+id/post_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="95"
+                        android:text="@string/post_title"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/post_delete_button"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:src="@drawable/ic_delete_button"
+                            android:backgroundTint="@color/orange_lighter"
+                            android:contentDescription="@string/post_delete_button"
+                            tools:targetApi="lollipop"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/post_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/post_time" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/post_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/post_title_layout"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/post_user_name"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/post_page_image"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/post_user_name"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_new_post_image"
+                    tools:targetApi="lollipop"
+                    android:contentDescription="@string/post_page_image" />
+
+                <TextView
+                    android:id="@+id/post_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/post_page_image"
+                    android:text="@string/post_description"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/post_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/post_description"
+                    android:drawablePadding="5dp"
+                    android:padding="2dp"
+                    android:text="@string/post_comment"
+                    android:textColor="@color/black"
+                    app:drawableStartCompat="@drawable/ic_commenting"
+                    app:drawableLeftCompat="@drawable/ic_commenting" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/post_comment"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edit_background"
+        android:backgroundTint="@color/white"
+        tools:targetApi="lollipop">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/ic_avatar"
+            android:contentDescription="@string/post_reply_avatar" />
+
+        <EditText
+            android:id="@+id/comment_text_insert"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:hint="@string/comment_text_insert"
+            tools:ignore="DuplicateIds"
+            android:autofillHints="@string/comment_text_insert"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_reply_send_button"
+            android:contentDescription="@string/send_button" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

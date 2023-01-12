@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- Splash Page -->
+    <string name="logo">Splash page logo</string>
+    <string name="splash_text">Creating a sustainable and circular culture on Campus</string>
+    <string name="splash_name">CircuCampus</string>
+    <!-- Login Page -->
+    <string name="welcome">Welcome!</string>
+    <string name="student_id">Student ID</string>
+    <string name="start_date">Start Date</string>
+    <string name="enter_start_date">Start Date(yyyy-mm-dd)</string>
+    <string name="login">Login</string>
+
+    <!-- Home Page -->
+    <string name="home_page_logo">logo on home page top</string>
+    <string name="home_search">"go to search page button "</string>
+
+    <!-- New Post Page -->
+    <string name="create_post">Write Your Post</string>
+    <string name="new_post_title">Title</string>
+    <string name="description">Description</string>
+    <string name="new_post_description">Text here</string>
+    <string name="image_text_view">Image</string>
+    <string name="new_post_image_url">Enter Image URL</string>
+    <string name="new_post_image">"upload image form camera or gallery"</string>
+
+    <!-- Post Page -->
+    <string name="post_title">Title</string>
+    <string name="post_delete_button">delete the post</string>
+    <string name="post_time">Time 00:00</string>
+    <string name="post_user_name">Name</string>
+    <string name="post_page_image">post page image</string>
+    <string name="post_description">Text</string>
+    <string name="post_comment">Comments</string>
+    <string name="post_reply_avatar">replyer\'s avatar in post page</string>
+    <string name="comment_text_insert">Enter Comment..</string>
+    <string name="send_button">send reply</string>
+
+    <!-- Edit Profile Page -->
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="dormitory">Dormitory</string>
+    <string name="cancel_button">edit profile page cancel button</string>
+    <string name="check_button">edit profile page check button</string>
+    <string name="edit_profile_avatar">edit profile avatar</string>
+
+    <!-- Post Detail -->
+    <string name="post_detail_avatar">post detail avatar</string>
+    <string name="post_detail_name">Name</string>
+    <string name="post_detail_time">0000–00–00 00:00:00</string>
+    <string name="post_detail_title">Title</string>
+    <string name="post_detail_description">Description</string>
+    <string name="post_detail_post_id">-Set postID here-</string>
+    <string name="post_detail_image">post detail image</string>
+
+    <!-- Post Detail -->
+    <string name="reply_avatar">reply avatar</string>
+    <string name="reply_name">Name</string>
+    <string name="reply_time">0000-00-00 00:00:00</string>
+    <string name="reply_description">Description</string>
+    <string name="reply_id">-Set replyID here-</string>
+    <string name="profile_background_top">profile background top</string>
+
+    <!-- menu -->
+    <string name="menu_home_fragment">Home</string>
+    <string name="menu_new_post_fragment">New Post</string>
+    <string name="menu_profile_fragment">Profile</string>
+    <string name="profile_name">Name</string>
+
+    <!-- Profile Page -->
+    <string name="profile_avatar">profile avatar</string>
+    <string name="profile_email">Email@sfu.ca</string>
+    <string name="profile_phone">123456789</string>
+    <string name="profile_start_date_text">Start Date:  </string>
+    <string name="profile_start_date">2021/01/01</string>
+    <string name="profile_dormitory_text">Dormitory:  </string>
+    <string name="profile_dormitory">000</string>
+    <string name="my_post">My Post</string>
+    <string name="profile_edit">go to profile edit page</string>
+
+</resources>

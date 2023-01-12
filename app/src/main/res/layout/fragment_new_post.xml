@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <LinearLayout
+                android:id="@+id/create_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="@string/create_post"
+                    android:textColor="@color/orange_dark"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginStart="130dp"
+                    android:backgroundTint="@color/orange_lighter"
+                    android:drawableBottom="@drawable/ic_tick"
+                    tools:targetApi="lollipop" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/new_post_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/create_post"
+                android:hint="@string/new_post_title"
+                android:autofillHints="@string/new_post_title"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_post_title"
+                android:layout_marginTop="5dp"
+                android:text="@string/description"
+                android:textColor="@color/orange_dark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/new_post_description"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/description"
+                android:background="@drawable/edit_background"
+                android:gravity="top"
+                android:hint="@string/new_post_description"
+                android:autofillHints="@string/new_post_description"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/image_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/new_post_description"
+                android:text="@string/image_text_view"
+                android:textColor="@color/orange_dark"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/new_post_image_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_text_view"
+                android:hint="@string/new_post_image_url"
+                android:maxLines="1"
+                android:autofillHints="@string/new_post_image_url"
+                android:inputType="text"
+                tools:ignore="TextFields" />
+
+            <ImageView
+                android:id="@+id/new_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_below="@+id/new_post_image_url"
+                android:background="@drawable/edit"
+                android:src="@drawable/ic_empty_image"
+                android:contentDescription="@string/new_post_image" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
